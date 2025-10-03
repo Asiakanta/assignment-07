@@ -33,9 +33,6 @@ const Box = ({ fetchPromise }) => {
     const remaining = ticketItems.filter((item) => item.id !== issue.id);
     setTicketItems(remaining);
   };
-  // console.log(ticketItems);
-
-  // console.log(setTicketItems);
 
   return (
     <div>
