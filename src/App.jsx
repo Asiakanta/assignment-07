@@ -2,7 +2,6 @@ import "./App.css";
 import Container from "./component/Container";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
-import Card from "./component/Card";
 import Box from "./component/Box";
 import { Suspense } from "react";
 import TicketBox from "./component/ticketBox";
@@ -19,7 +18,7 @@ function App() {
     <div>
       <Container />
       <Navbar />
-      <Card />
+
       <TicketBox />
       <Suspense fallback="loading...">
         <Box fetchPromise={fetchPromise} />

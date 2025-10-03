@@ -42,19 +42,17 @@ const Box = ({ fetchPromise }) => {
       <Card
         ticketTotal={ticketItems.length}
         resolveTotal={resolveItems.length}
-      ></Card>
-      ;
+      />
+
       <div className="w-11/12 mx-auto py-10 grid grid-cols-1 lg:grid-cols-12 gap-5">
-        {/* Left Side (Tickets) */}
         <div className="lg:col-span-9">
           <h2 className="flex items-center gap-2 font-semibold text-2xl mb-10">
             Customer Tickets
           </h2>
-          {/* ✅ prop name fixed */}
+
           <TicketBox handleTicket={handleTicket} data={data} />
         </div>
 
-        {/* Right Side (Task Status) */}
         <div className="md:col-span-1 lg:col-span-3 space-y-5">
           <h2 className="font-semibold text-2xl mb-10">Task Status</h2>
           <div className="shadow p-10 space-y-5">
